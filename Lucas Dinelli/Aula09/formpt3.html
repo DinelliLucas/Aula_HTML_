@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="mailto:lucasdinelli@gmail.com" method="post">
+    
+        <FIeldset>
+            <legend>Dados Cadastrais</legend>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome"  required>
+    
+
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" required> 
+    </FIeldset>
+    
+    
+
+    <fieldset>
+    <legend>endereços</legend>
+    <label for="listaUnidades">Selecione sua unidade</label>
+    <select name="listaUnidades" id="listaUnidades" required>
+      <option value="op1"  selected    disabled="unidades">Unidades</option>
+      <option value="santana">Santana</option>
+      <option value="santo_amaro">Santo Amaro</option>
+      <option value="diadema">Diadema</option>
+      <option value="itaquera">Itaquera</option>
+    </select>
+    
+    
+
+    <legend></legend>
+    <p>Onde você mora</p>
+    <input type="text" list="cidade" autocomplete="on" name="listaCidade" placeholder="Digite sua cidade">
+    <datalist id="cidade">
+    <option value="São Paulo"></option>
+    <option value="Campinas"></option>
+    <option value="Santo Andre"></option>
+    <option value="Juquitiba"></option>
+    </datalist>
+</fieldset>
+    
+
+    <fieldset>
+    <legend>Opnião</legend>
+    <textarea name="avaliacao" id="avaliacao" cols="30" rows="10" placeholder="Deixe aqui sem comentário" maxlength="100">
+    </textarea>
+    <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>
